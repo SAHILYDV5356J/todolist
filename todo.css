@@ -1,0 +1,274 @@
+body{
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: 0 -150px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+#content{
+    height: 70vh;
+    width: 55vw;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 1px 1px rgba(241, 241, 241, 0.457);
+    margin-top: 3rem;
+    background-color: rgba(39, 39, 39, 0.374);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding-top: 40px;
+
+}
+#content h1{
+    color:white;
+    text-shadow: 2px 1px rgb(20, 86, 140);
+}
+
+#searchbar{
+    width: 60%;
+    height: 2.4rem;
+    /* border: 1px solid black; */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    transition: outline 0.2s;
+
+}
+#searchbar:hover{
+    outline: rgb(17, 32, 36) solid 2px;
+}
+#lens{
+    width: 3rem;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#searchbar input{
+    width: 72%;
+    height: 85%;
+   font-size: 17px;
+    border: none;
+}
+#searchbar input:focus{
+    outline: none;
+    background-color: none;
+}
+#searchbar button{
+    width: 16%;
+    height: 100%;
+    background-color: gray;
+    border: none;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+#searchbar button:active{
+    box-shadow:inset 0 0 1px 1px rgba(0, 0, 0, 0.637) ;
+    
+}
+#add{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+   border: none;
+    margin-top: 4rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+#add:hover{
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.361);
+}
+#add:active{
+    box-shadow: none;
+}
+
+#add i{
+    font-size: 2.5rem;
+    font-weight: 550;
+    color: gray;
+}
+
+#searchcontent{
+    margin-top: 20px;
+    width: 60%;
+    height: 2.75rem;
+    margin-right: 1.9rem;
+    border-radius: 5px;
+}
+#searchcontent a{
+    width: 100%;
+    height: 2.7rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding-left: 30px;
+    
+}
+#searchcontent a:active{
+    scale: 1.02;
+}
+#searchcontent a pre{
+    font-size: 1.5rem;
+    font-family: monospace;
+    width: 90%;
+}
+
+#alltask{
+    height: 76vh;
+    width: 30vw;
+    
+    margin-top: 3rem;
+    border-radius: 10px;
+    background-color: rgba(39, 39, 39, 0.374);
+    box-shadow: 0 0 1px 1px rgba(241, 241, 241, 0.457);
+    overflow:scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scrollbar-width: none;
+    
+
+    
+
+}
+#scrolpart{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    
+    
+    
+   
+}
+#scrolpart a{
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.806);
+   
+   padding:0.3rem 0 0.3rem 0;
+
+   display: flex;
+   align-items: center;
+    text-decoration: none;
+    color: black;
+   
+    
+}
+#scrolpart a:active{
+   scale:1.02;
+}
+
+#scrolpart a pre{
+    width: 90%;
+    height: 100%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-weight: 600;
+   
+
+}
+
+#scrolpart a div{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+@media(max-width:450px){
+      #add{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+   border: none;
+    margin-top: 2rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+#add i{
+    font-size: 2rem;
+    font-weight: 550;
+    color: gray;
+}
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+        background-repeat:repeat-y;
+        background-position: -60px 10px;
+    }
+    #content{
+        margin-top: 5px;
+        width: 90vw;
+        font-size: 0.8rem;
+        height: 48vh;
+    }
+
+    #searchbar{
+     width: 80%;
+    
+    }
+    #searchbar button{
+     width: 20%;
+     font-size: 0.7rem;
+
+    }
+    #searchcontent{
+      margin-top: 25px;
+      width: 75%;
+    
+      margin-right: 2rem;
+    
+    }
+    #searchcontent a{
+    padding-right: 5px;
+    
+    }
+#searchcontent a pre{
+    font-size: 1rem;
+    font-family: monospace;
+    width: 90%;
+}
+
+#alltask{
+    height: 40vh;
+    width: 90vw;
+   
+    margin-top: -10px;
+    
+
+}
+
+}
